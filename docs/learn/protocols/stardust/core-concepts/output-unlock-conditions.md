@@ -17,7 +17,7 @@ image: /img/logo/preview.png
 The redesigned _UTXO model_ allows for implementing additional logic on transfers. Outputs that are The results of a transfer may define special unlocking logic. When these outputs are consumed in subsequent transfers
 they have to satisfy all unlock conditions that are defined on them.
 
-![The UTXO Model](/static/img/learn/protocols/stardust/rethinking-utxo/utxo.svg)
+![The UTXO Model](/img/learn/protocols/stardust/output-unlock-conditions/utxo.svg)
 
 
 ## Address
