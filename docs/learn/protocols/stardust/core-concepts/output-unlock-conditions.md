@@ -17,6 +17,9 @@ image: /img/logo/preview.png
 The redesigned _UTXO model_ allows for implementing additional logic on transfers. Outputs that are The results of a transfer may define special unlocking logic. When these outputs are consumed in subsequent transfers
 they have to satisfy all unlock conditions that are defined on them.
 
+![The UTXO Model](/static/img/learn/protocols/stardust/rethinking-utxo/utxo.svg)
+
+
 ## Address
 
 Outputs are locked under addresses that can be unlocked via a signature. [Chrysalis](../../chrysalis/introduction.md) supports only this kind of output unlocking.
