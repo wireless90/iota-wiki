@@ -21,14 +21,17 @@
 
 <details> 
     <summary>Is my account automatically enabled to issue blocks?</summary> 
-    You should enable the Block issuer feature from the account after locking additional IOTA tokens in the storage deposit, which is used as an anti-spam mechanism. 
-    This process is done only once, and the storage deposit is a small (XXXXXX IOTAs) deposit.
-    The deposit can be recovered in the case you wish to destroy the account.
+    You should enable the Block issuer feature from the account after depositing additional tokens in the account output. 
+    This deposit is used as an anti-spam mechanism and can be recovered in the case you wish to destroy the account.
+    The Firefly wallet enables the Block Issuer Feat automatically, so the regular Firefly user does not need to worry about this.
 </details>
 
 <details> 
     <summary>Is my account automatically enabled to delegate?</summary> 
-    Any block issuer is automatically enabled to delegate.
+    Delegation is completely separate from accounts or block issuance. 
+    Delegation is done through dedicated Delegation Outputs which may or may not be owned by accounts. 
+    However, to create such a Delegation Output yourself, you will need a block issuer account.
+    This way, any block issuer is automatically enabled to delegate.
 </details>
 
 <details> 
