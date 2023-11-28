@@ -78,7 +78,7 @@
     <summary>Why did my Mana balance decrease in the wallet?</summary>  
     While you hold your IOTA/Shimmer tokens, your balance will not decrease since the Mana generation in your wallet compensates for the decay of this Mana.
     However, if you sell part of your tokens, the Mana generation rate may temporarily not compensate for the Mana decay. 
-    Similarly, if you don't hold any tokens, your Mana balance will decay by 1/3 of your balance per year.
+    Similarly, if you don't hold any tokens, your Mana balance will decay by 30% of your balance per year.
 </details>
 
 <details> 
