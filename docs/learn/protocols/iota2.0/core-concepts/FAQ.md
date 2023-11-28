@@ -113,11 +113,13 @@
 </details>
 
 <details> 
-    <summary>How much Mana will I need to burn to create a single block? </summary>  
-    The actual Mana required per block will depend on the traffic conditions and the block's characteristics (block length, number of references, etc.). 
-    The protocol sets a minimum cost of around 0.001 Mana to prevent spam (the actual value may change depending on the results of the upcoming tests in the DevNet). 
-    We expect the Mana burnt per block to be close to this minimum value during the early stages of the network. 
-    See the Mana Calculator https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/mana-calculator/ for more information.
+    <summary>How much Mana will I need to burn to create a single block? </summary>
+
+The actual Mana required per block will depend on the traffic conditions and the block's characteristics (block length, number of references, etc.). 
+The protocol sets a minimum cost of around 0.001 Mana to prevent spam (the actual value may change depending on the results of the upcoming tests in the DevNet). 
+We expect the Mana burnt per block to be close to this minimum value during the early stages of the network. 
+See the [Mana Calculator](./mana-calculator.md) for more information.
+
 </details>
 
 <details> 
@@ -161,10 +163,12 @@
 
 <details> 
     <summary>Is my Block guaranteed to confirm if I post the required Mana for that period?</summary>
-    Under normal circumstances, yes. 
-    However, as in any other DLT, this cannot be guaranteed in extreme cases. 
-    For that reason, we suggest the user to use the rate setter, explained in [our Wiki](https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/communication-layer/#icca-during-high-traffic-periods), to minimize this probability to the minimum possible.
-    The firefly wallet supports this rate setter.
+
+Under normal circumstances, yes. 
+However, as in any other DLT, this cannot be guaranteed in extreme cases. 
+For that reason, we suggest the user to use the [rate setter](./communication-layer.md#icca-during-high-traffic-periods), to minimize this probability to the minimum possible.
+The firefly wallet supports this rate setter.
+
 </details>
 
 <details> 
@@ -208,10 +212,12 @@
 </details>
     
 <details> 
-    <summary>How do I choose a validator?</summary>  
-    You can always calculate in advance how much profit you are expected to get depending on the validator you choose (for more on that, see our [Mana Calculator](https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/mana-calculator/)). 
-    Thus, your validator selection process should combine profit maximization and your trust in said validator. 
-    Remember that you are not only getting rewards but also delegating your voting power to the validator! Ultimately (even though your funds are not technically at risk), the network's utility depends on its security level, so delegating to untrustful validators might decrease the value of your investment in the long run. 
+    <summary>How do I choose a validator?</summary>
+
+You can always calculate in advance how much profit you are expected to get depending on the validator you choose (for more on that, see our [Mana Calculator](./mana-calculator.md)). 
+Thus, your validator selection process should combine profit maximization and your trust in said validator. 
+Remember that you are not only getting rewards but also delegating your voting power to the validator! Ultimately (even though your funds are not technically at risk), the network's utility depends on its security level, so delegating to untrustful validators might decrease the value of your investment in the long run.
+
 </details>
 
 <details> 
@@ -289,18 +295,22 @@
 </details>  
     
 <details>      
-    <summary>How can I become a validator?</summary>       
+    <summary>How can I become a validator?</summary>
+    
     You must run a node and register as a validator. 
     You will be added to the list of validators, and accounts can delegate their stake to you. 
     Then, based on your stake and the stake delegated to you, you’ll have a chance to be selected for the committee. 
-    If you are chosen and perform your validation duties correctly, you (and whoever delegated to you) will be rewarded accordingly. For more information, see our[Mana Calculator](https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/mana-calculator/).
+    If you are chosen and perform your validation duties correctly, you (and whoever delegated to you) will be rewarded accordingly. For more information, see our[Mana Calculator](./mana-calculator.md).
+
 </details>  
     
 <details>      
-    <summary>Do I have to lock tokens to become a validator? </summary>       
+    <summary>Do I have to lock tokens to become a validator? </summary>
+     
     Technically, no. 
     However, locking tokens (besides increasing your chance to be selected for the committee) increases your rewards compared to delegating these tokens to yourself. 
     Additionally, the more tokens you lock, the more tokens you’ll tend to have delegated to you (for more in that dynamics, see the [Incentives Whitepaper](https://files.iota.org/papers/IOTA_2.0_Incentives_And_Tokenomics_Whitepaper.pdf)).
+
 </details>  
     
 <details>      
