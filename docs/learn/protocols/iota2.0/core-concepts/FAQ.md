@@ -162,7 +162,7 @@
     <summary>Is my Block guaranteed to confirm if I post the required Mana for that period?</summary>
     Under normal circumstances, yes. 
     However, as in any other DLT, this cannot be guaranteed in extreme cases. 
-    For that reason, we suggest the user to use the rate setter, explained in https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/communication-layer/#icca-during-high-traffic-periods, to minimize this probability to the minimum possible.
+    For that reason, we suggest the user to use the rate setter, explained in [our Wiki](https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/communication-layer/#icca-during-high-traffic-periods), to minimize this probability to the minimum possible.
     The firefly wallet supports this rate setter.
 </details>
 
@@ -175,8 +175,9 @@
 
 <details> 
     <summary>If I have enough Mana, why can’t I issue blocks?</summary>  
-    The user should enable the Block issuer feature from the account after locking additional IOTA tokens in the storage deposit, which serves as an anti-spam mechanism. 
-    This process is done only once, and the storage deposit is a small (XXXXXX IOTAs) deposit, which can be recovered in the case the user wishes to destroy the account.
+    You should enable the Block issuer feature from the account after depositing additional tokens in the account output. 
+    This deposit is used as an anti-spam mechanism and can be recovered in the case you wish to destroy the account.
+    The Firefly wallet enables the Block Issuer Feat automatically, so the regular Firefly user does not need to worry about this.
 </details>
 
 <details> 
@@ -207,7 +208,7 @@
     
 <details> 
     <summary>How do I choose a validator?</summary>  
-    You can always calculate in advance how much profit you are expected to get depending on the validator you choose (for more on that, see LINK TO THE CALCULATOR). 
+    You can always calculate in advance how much profit you are expected to get depending on the validator you choose (for more on that, see our [Mana Calculator](https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/mana-calculator/)). 
     Thus, your validator selection process should combine profit maximization and your trust in said validator. 
     Remember that you are not only getting rewards but also delegating your voting power to the validator! Ultimately (even though your funds are not technically at risk), the network's utility depends on its security level, so delegating to untrustful validators might decrease the value of your investment in the long run. 
 </details>
@@ -291,14 +292,14 @@
     You must run a node and register as a validator. 
     You will be added to the list of validators, and accounts can delegate their stake to you. 
     Then, based on your stake and the stake delegated to you, you’ll have a chance to be selected for the committee. 
-    If you are chosen and perform your validation duties correctly, you (and whoever delegated to you) will be rewarded accordingly. For more information, see LINK TO CALCULATOR.
+    If you are chosen and perform your validation duties correctly, you (and whoever delegated to you) will be rewarded accordingly. For more information, see our[Mana Calculator](https://wiki.iota.org/learn/protocols/iota2.0/core-concepts/mana-calculator/).
 </details>  
     
 <details>      
     <summary>Do I have to lock tokens to become a validator? </summary>       
     Technically, no. 
     However, locking tokens (besides increasing your chance to be selected for the committee) increases your rewards compared to delegating these tokens to yourself. 
-    Additionally, the more tokens you lock, the more tokens you’ll tend to have delegated to you (for more in that dynamics, see the Whitepaper).
+    Additionally, the more tokens you lock, the more tokens you’ll tend to have delegated to you (for more in that dynamics, see the [Incentives Whitepaper](https://files.iota.org/papers/IOTA_2.0_Incentives_And_Tokenomics_Whitepaper.pdf)).
 </details>  
     
 <details>      
