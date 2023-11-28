@@ -137,12 +137,13 @@
     <summary>What will be my TPS?</summary>  
     The number of blocks that can be generated will depend on the Mana holdings and the real-time traffic. 
     However, our congestion control mechanism guarantees the maximum possible share of the available throughput compared to online users. 
-    In the following, we estimate the early stages and permanent regime minimum tps for token holders, delegators, and validators. 
+    In the following, we estimate the early stages (uncongested network) and permanent regime (stabiloty price)  minimum tps for token holders, delegators, and validators. 
     The tables also shows how much time is needed to generate enough Mana to create a block in a given scenario, depending on the IOTA/Shimmer tokens held. 
-    [uncongested tps](https://hackmd.io/_uploads/ryGCQqzBT.png)
-    [stability tps](https://hackmd.io/_uploads/Hk2AmqGB6.png)
+    <img src="./uncongested%20tps.png"/>
+    ![uncongested tps](./uncongested%20tps.png)
+    ![stability tps](./stability%20tps.png)
+    ![A generic transaction payload](/img/learn/protocols/iota2.0/core-concepts/data-flow/payload.png)
 </details>
-
 
 <details> 
     <summary>What does it mean to have network congestion?</summary>  
