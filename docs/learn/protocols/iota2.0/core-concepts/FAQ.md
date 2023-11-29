@@ -142,9 +142,7 @@ See the [Mana Calculator](./mana-calculator.md) for more information.
     In the following, we estimate the early stages (uncongested network) and permanent regime (stabiloty price)  minimum tps for token holders, delegators, and validators. 
     The tables also shows how much time is needed to generate enough Mana to create a block in a given scenario, depending on the IOTA/Shimmer tokens held. 
     <img src="./uncongested%20tps.png"/>
-    ![uncongested tps](./uncongested%20tps.png)
-    ![stability tps](./stability%20tps.png)
-    ![A generic transaction payload](/img/learn/protocols/iota2.0/core-concepts/data-flow/payload.png)
+    <img src="./stability%20tps.png"/>
 </details>
 
 <details> 
