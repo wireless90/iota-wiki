@@ -18,7 +18,7 @@ keywords:
 
 Smart Contracts are currently only compatible with the [Stardust protocol](/learn/protocols/stardust/introduction) and
 therefore only compatible with the [Shimmer](/build/networks-endpoints/#shimmer) and
-[Public Testnet networks](/build/networks-endpoints/#public-testnet).
+[ShimmerEVM Testnet networks](/build/networks-endpoints/#public-testnet).
 
 :::
 

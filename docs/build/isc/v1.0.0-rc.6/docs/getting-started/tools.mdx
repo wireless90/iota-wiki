@@ -65,16 +65,16 @@ Metamask.
 let your wallet interact with web applications utilizing an EVM chain (dApps).
 
 To use your EVM chain with MetaMask, simply open up MetaMask and click on the network drop-down list at the very top. At
-the bottom of this list, you will see the option `Add network`. On the new page you will see a list of popular network with the option `Add a network manually`.
-For example this would be the config to add the [Public Testnet](/build/networks-endpoints/#public-testnet):
+the bottom of this list, you will see the option `Add network`. On the new page you will see a list of popular network
+with the option `Add a network manually`.
 
 <Tabs>
-<TabItem value='testnet' label='Public Testnet'>
+<TabItem value='testnet' label='ShimmerEVM Testnet'>
 <AddToMetaMaskButton cfg={EVMNetworks['shimmerevm-testnet']}/>
 
-- Network Name: `Public Testnet`
+- Network Name: `ShimmerEVM Testnet`
 - New RPC URL: `https://json-rpc.evm.testnet.shimmer.network/`
-- Chain ID: `1073`
+- Chain ID: <ChainId url='https://json-rpc.evm.testnet.shimmer.network'/>
 - Currency Symbol: `SMR`
 - Block Explorer URL: `https://explorer.evm.testnet.shimmer.network/`
 
@@ -84,7 +84,7 @@ For example this would be the config to add the [Public Testnet](/build/networks
 
 - Network Name: `Shimmer EVM`
 - New RPC URL: `https://json-rpc.evm.shimmer.network/`
-- Chain ID: `148`
+- Chain ID: <ChainId url='https://json-rpc.evm.shimmer.network/'/>
 - Currency Symbol: `SMR`
 - Block Explorer URL: `https://explorer.evm.shimmer.network/`
 
@@ -92,7 +92,7 @@ For example this would be the config to add the [Public Testnet](/build/networks
 </Tabs>
 
 Ensure that your `RPC Url` and `Chain ID` are set correctly and match the dashboard values. The `Network Name` can be
-whatever you see fit. Click "Save" to add the [Public Testnet](/build/networks-endpoints/#public-testnet) to MetaMask.
+whatever you see fit. Click "Save" to add the [ShimmerEVM Testnet](/build/networks-endpoints/#public-testnet) to MetaMask.
 
 If you wish to use additional EVM chains with Metamask, you can add more Custom RPC networks, as long as they have a
 unique `Chain ID` and `RPC Url`. Once you have done this, you can start using MetaMask to manage your EVM wallet or
@@ -108,14 +108,11 @@ the `Environment` dropdown.
 
 ![Select Injected Provider from the Environment dropdown](/img/evm/remix-injected-provider-metamask.png)
 
-Metamask will ask to connect to Remix, and once connected, it will set the `Environment` to `Injected Web3` with
-the `Custom (1073) network`.
+:::tip Deploy a Smart Contract with Remix
 
-![Environment will be set to Injected Web3](/img/evm/remix-injected-provider-set.png)]
+Deploy a Solidity Smart Contract using Remix following our [how-to Deploy a Smart Contract guide](../how-tos/EVM/deploy-a-smart-contract.md#remix).
 
-### Video Tutorial
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0_rmmprEKrM" title="ShimmerEVM Tutorial: Connect to Public Testnet & Deploy a Solidity Smart Contract" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ## Hardhat
 
@@ -124,7 +121,7 @@ Solidity smart contracts on an EVM chain. EVM chains running on IOTA Smart Contr
 make sure you add the correct network parameters to your `hardhat.config.js`, for example:
 
 <Tabs>
-<TabItem value='testnet' label='Public Testnet'>
+<TabItem value='testnet' label='ShimmerEVM Testnet'>
 
 ```javascript
 networks: {
@@ -134,20 +131,6 @@ networks: {
         accounts: [YOUR PRIVATE KEY],
     },
 },
-//verify config
-etherscan: {
-    apiKey: {
-    'shimmerevm-testnet': 'ABCDEFG123456'
-    },
-    customChains: [{
-        network: 'shimmerevm-testnet',
-        chainId: 1073,
-        urls: {
-            apiURL: 'https://explorer.evm.testnet.shimmer.network/api',
-            browserURL: ' https://explorer.evm.testnet.shimmer.network/'
-        }
-    }]
-}
 ```
 
 </TabItem>
@@ -161,35 +144,22 @@ networks: {
         accounts: [YOUR PRIVATE KEY],
     },
 },
-//verify config
-etherscan: {
-    apiKey: {
-        'shimmerevm': 'ABCDEFG123456'
-    },
-    customChains: [{
-        network: 'shimmerevm',
-        chainId: 148,
-        urls: {
-            apiURL: 'https://explorer.evm.shimmer.network/api',
-            browserURL: 'https://explorer.evm.shimmer.network/'
-        }
-    }]
-}
 ```
 
 </TabItem>
 </Tabs>
 
+:::tip Deploy a Smart Contract with Hardhat
+
+Deploy a Solidity Smart Contract using Remix following our [how-to Deploy a Smart Contract guide](../how-tos/EVM/deploy-a-smart-contract.md#hardhat).
+
+:::
 :::caution
 
 Currently, there is no validation service available for EVM/Solidity smart contracts on IOTA Smart Contracts, which is
 often offered through block explorer APIs.
 
 :::
-
-### Video Tutorial
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rRscvKirroo" title="ShimmerEVM Tutorial: Deploying a Smart Contract with Hardhat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Ethers.js/Web3.js
 
